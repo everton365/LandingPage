@@ -4,7 +4,7 @@ import Lottie from 'react-lottie';
 import './index.css';
 import animation from './components/animações/Animation.json';
 import animation1 from './components/animações/Animation1.json';
-import animation2 from './components/animações/Animation2.json';
+
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -62,7 +62,7 @@ function App() {
     <div className="body">
       <header>
     <section class="profile-section">
-     <img src="/image/Imagem2.jpg" alt="imagem de uma galaxia!" width="200px" height="200px"/>
+     <img src="./image/Imagem2.jpg" alt="imagem de uma galaxia!" width="200px" height="200px"/>
      <div className='digito'>
     <h1 className='digite'>EVERTON SILVA</h1>
     
