@@ -32,7 +32,7 @@ header {
   flex-direction: row;
   background: radial-gradient(circle, rgb(3, 4, 6) 0%, rgb(16, 19, 31) 100%);
   animation: spiral 80s reverse infinite;
-  background-image: url("../public/image/ceu.jpg");
+  background-image: url("./image/ceu.jpg");
   background-size: cover;
   background-position: center bottom;
 }
