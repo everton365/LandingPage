@@ -24,7 +24,6 @@ header {
 /* Estilizando a seção */
 .profile-section {
   border: transparent;
-  background-color: transparent;
   margin-left: 0;
   width: 100%;
   max-width: 1205px;
@@ -32,7 +31,7 @@ header {
   flex-direction: row;
   background: radial-gradient(circle, rgb(3, 4, 6) 0%, rgb(16, 19, 31) 100%);
   animation: spiral 80s reverse infinite;
-  background-image: url("../public/image2/ceu.jpg");
+  background-image: url("../public/image/ceu.jpg");
   background-size: cover;
   background-position: center bottom;
 }
@@ -385,7 +384,6 @@ footer {
   /* Estilizando a seção */
   .profile-section {
     border: transparent;
-    background-color: transparent;
     justify-content: flex-start;
     align-items: flex-start;
     margin-left: 0px;
