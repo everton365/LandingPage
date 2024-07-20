@@ -62,7 +62,7 @@ function App() {
     <div className="body">
       <header>
     <section class="profile-section">
-     <img src="./image/Imagem2.jpg" alt="imagem de uma galaxia!" width="200px" height="200px"/>
+     <img src="./image/Imagem2.jpg" alt="" width="200px" height="200px"/>
      <div className='digito'>
     <h1 className='digite'>EVERTON SILVA</h1>
     
