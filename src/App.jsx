@@ -153,7 +153,7 @@ function App() {
           <div className="link">
             <h3>Projeto Receita</h3>
             <div className="text-bnt">
-              <p>Apresento nosso projeto</p>
+              <p>Apresento um projeto</p>
               <p>combinando HTML e CSS, </p>
               <p>focado em criar um layout </p>
               <p>responsivo e conceitos</p>
@@ -167,7 +167,7 @@ function App() {
           <div className="link">
             <h3>Projeto Tabela</h3>
             <div className="text-bnt">
-              <p>Apresento nosso projeto de</p>
+              <p>Apresento um projeto de</p>
               <p>abelas em HTML, desenvolvido</p>
               <p>para explorar a estruturação e </p>
               <p>formatação de dados tabulares</p>

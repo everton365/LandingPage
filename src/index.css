@@ -21,6 +21,7 @@
   display: flex;
   position: absolute;
   flex-direction: row;
+  z-index: 10;
   font-family: "Roboto Slab", serif;
   margin-top: 10px;
   margin-left: 80px;
@@ -140,6 +141,10 @@ main {
   color: transparent;
 }
 
+.digito h1 {
+  font-family: "Roboto Slab", serif;
+}
+
 @keyframes mask {
   50% {
     border-right-color: transparent;
@@ -162,7 +167,7 @@ main {
 .digite1 {
   display: flex;
   font-size: 40px;
-  font-family: "inter", sans-serif;
+  font-family: "Roboto Slab", serif;
   margin-top: 20px;
   white-space: nowrap;
   color: #ffffff;
@@ -170,6 +175,10 @@ main {
   overflow: hidden;
   width: 23.3ch;
   animation: mask1 0.5s linear infinite, write1 15s steps(15, end) infinite;
+}
+
+.profile-section h2 {
+  font-family: "Roboto Slab", serif;
 }
 
 @keyframes mask1 {
@@ -299,6 +308,7 @@ h3 {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  margin-left: 10px;
   width: 220px;
   height: 200px;
 }
@@ -470,6 +480,22 @@ footer {
     width: 400px;
     height: 2000;
   }
+  .title1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 2px solid rgba(0, 0, 0, 0);
+    z-index: 20;
+    margin-top: -350px;
+    margin-left: -10px;
+  }
+  .statusbar {
+    margin-top: -250px;
+  }
+  .statusbar button:nth-child(2)::after {
+    display: block;
+  }
   header {
     display: flex;
     flex-direction: column;
@@ -479,12 +505,15 @@ footer {
   }
   main {
     display: flex;
+    margin-top: 65px;
     flex-direction: column;
     justify-content: center;
     width: 400px;
   }
   /* Estilizando a seção */
   .profile-section {
+    display: flex;
+    height: 700px;
     border: 2px solid rgba(0, 0, 0, 0);
     justify-content: flex-start;
     align-items: flex-start;
@@ -510,9 +539,19 @@ footer {
     font-family: "inter", sans-serif;
     margin-top: 20px;
     white-space: nowrap;
-    color: #ffffff;
+    background-image: linear-gradient(to right, #f3f3f3, #5c78dc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     overflow: hidden;
     width: 14.5ch;
+  }
+  .digite span {
+    margin-left: 10px;
+    background-image: linear-gradient(to right, #f3f3f3, #5c78dc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
   .digite1 {
     display: flex;
@@ -528,12 +567,16 @@ footer {
   }
   .info-section {
     display: flex;
+    margin-top: 0px;
     height: 500px;
     width: 400px;
     margin-top: 0px;
     flex-direction: column;
     justify-content: center;
     background: linear-gradient(to bottom, #041e6c, #ffffff);
+  }
+  .profile-section img {
+    margin-top: 200px;
   }
   .info-section h2 {
     margin-top: 500px;
@@ -555,9 +598,9 @@ footer {
   }
   .praticas {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 80px;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0px;
     padding: 5px;
     width: 100%;
     max-width: 400px;
@@ -568,7 +611,7 @@ footer {
     justify-content: center;
     font-family: "inter", sans-serif;
     margin-top: 280px;
-    margin-left: 10px;
+    margin-left: -50px;
     margin-bottom: -30px;
     color: #797979;
   }
@@ -589,8 +632,8 @@ footer {
     position: absolute;
     z-index: 4;
     display: flex;
-    margin-top: 50px;
-    margin-left: 140px;
+    margin-bottom: -1700px;
+    margin-left: 180px;
     width: 200px;
   }
   footer {
