@@ -1,5 +1,8 @@
-$border: transparent;
+$border: 2px solid #0000;
 $text-primary: "inter", sans-serif;
+$text-secundary: "Roboto Slab", serif;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
 
 * {
   margin: 0;
@@ -13,25 +16,85 @@ $text-primary: "inter", sans-serif;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
   width: 100%;
-  padding: 1px;
+  max-width: 1210px;
+}
+.title1 {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  font-family: "Roboto Slab", serif;
+  margin-top: 10px;
+  margin-left: 80px;
+  border: $border;
+}
+.title1 h1 {
+  font-size: 20px;
+  background-image: linear-gradient(to right, #f3f3f3, #5c78dc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.title1 span {
+  color: #000000;
+  font-size: 30px;
+  /* Aplica um gradiente linear ao texto */
+  background-image: linear-gradient(to right, #f3f3f3, #5c78dc);
+
+  /* Define que o gradiente deve ser recortado para o texto */
+  -webkit-background-clip: text; /* Para navegadores WebKit */
+  background-clip: text; /* Padrão para navegadores modernos */
+
+  /* Define a cor de preenchimento do texto */
+  color: transparent; /* Torna o texto transparente para revelar o gradiente */
+}
+.statusbar {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  position: absolute;
+  z-index: 10;
+  flex-direction: row;
+  justify-content: flex-end;
+  max-width: 1200px;
+}
+.statusbar button {
+  border: none;
+  margin-right: 20px;
+  width: 120px;
+  font-size: 20px;
+  background-image: linear-gradient(to right, #f3f3f3, #5c78dc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-family: $text-secundary;
+  font-weight: bold;
+
+  background-color: transparent;
+  cursor: pointer;
 }
 header {
   display: flex;
   height: 400px;
-  width: 1200px;
+  width: 100%;
+}
+main {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Estilizando a seção */
 .profile-section {
-  border: $border;
- 
   margin-left: 0;
   width: 100%;
-  max-width: 1205px;
+  border: 2px solid #000000;
   display: flex;
   flex-direction: row;
-  background: radial-gradient(circle, rgb(3, 4, 6) 0%, rgb(16, 19, 31) 100%);
+  background: linear-gradient(to bottom, #041e6c, #ffffff);
   animation: spiral 80s reverse infinite;
   background-image: url("../public/image/ceu.jpg");
   background-size: cover;
@@ -52,6 +115,7 @@ header {
   justify-content: flex-start;
   align-items: flex-start;
   margin-left: 30px;
+
   width: 600px;
 }
 
@@ -61,11 +125,21 @@ header {
   font-family: $text-primary;
   margin-top: 120px;
   white-space: nowrap;
-  color: #ffffff;
-  border-right: 4px solid #000000;
+
+  background-image: linear-gradient(to right, #f3f3f3, #5c78dc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   overflow: hidden;
   width: 14.5ch;
-  animation: mask 0.5s linear infinite, write 5s steps(14, end) infinite;
+}
+.digite span {
+  margin-left: 15px;
+
+  background-image: linear-gradient(to right, #f3f3f3, #5c78dc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 @keyframes mask {
@@ -99,7 +173,7 @@ header {
   color: #ffffff;
   border-right: 3px solid #000000;
   overflow: hidden;
-  width: 21.3ch;
+  width: 23.3ch;
   animation: mask1 0.5s linear infinite, write1 15s steps(15, end) infinite;
 }
 
@@ -117,14 +191,14 @@ header {
     width: 0ch;
   }
   85% {
-    width: 21.3ch;
+    width: 23.5ch;
   }
   95% {
-    width: 21.3ch;
+    width: 23.5ch;
   }
 
   100% {
-    width: 21.3ch;
+    width: 23.5ch;
   }
 }
 /* Estilizando a imagem */
@@ -144,28 +218,16 @@ section figcaption {
   font-size: 1.2em;
   color: #ffffff;
 }
-.gradient-transition {
-  max-width: 1200px;
-  z-index: 2;
-  position: absolute;
-  background-color: transparent;
-  display: flex;
-  top: 375px;
-  width: 100%;
-  height: 50px;
-  background: linear-gradient(to bottom, #5f86fd, #ffffff);
-}
 
 /* Estilo da seção de informações */
 .info-section {
   display: flex;
- height: 500px;
- width: 1200px;
-  flex-direction: row;
-  justify-content:center;
-
+  height: 500px;
   background: linear-gradient(to bottom, #041e6c, #ffffff);
-
+  width: 1220px;
+  flex-direction: row;
+  justify-content: center;
+  background-color: transparent;
   font-size: 14px;
 }
 
@@ -188,9 +250,10 @@ section figcaption {
 .praticas {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-top: 80px;
-  padding: 5px;
+  margin-bottom: 100px;
+  padding: 10px;
   width: 100%;
   max-width: 1200px;
 }
@@ -203,27 +266,70 @@ section figcaption {
   margin-top: 80px;
   color: #797979;
 }
-#meteor {
-  display: flex;
-  position: absolute;
-  z-index: -1;
- margin-top: -80px;
- background: linear-gradient(to bottom, #5f86fd, #ffffff);
-}
 
 .link {
   display: flex;
   flex-direction: column;
-  width: 600px;
-  font-size: 30px;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 10px;
+  width: 230px;
+  height: 320px;
+  background: linear-gradient(to bottom, #5f86fd, #ffffff);
   margin-left: 60px;
-  margin: 10px;
+  margin-top: 80px;
+  cursor: pointer;
+}
+.link p {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: $text-primary;
+  font-size: 15px;
+  color: #404040;
 }
 
-a {
-  color: #797979;
+h3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #404040;
   text-decoration: none;
+  font-size: 20px;
   font-family: "inter", sans-serif;
+}
+.text-bnt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 220px;
+  height: 200px;
+}
+.link button {
+  display: flex;
+  background-color: #041e6c;
+  color: #ffffff;
+  font-family: $text-primary;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 20px;
+  height: 30px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.animação {
+  position: absolute;
+  z-index: 4;
+  display: flex;
+  margin-top: -120px;
+  margin-left: 0px;
+  width: 200px;
 }
 /*estilo footer da pagina*/
 footer {
@@ -233,15 +339,6 @@ footer {
   width: 100%;
   max-width: 1320px;
   margin: 0 auto 20px auto;
-}
-
-button {
-  margin: 0 auto 20px auto;
-  width: 150px;
-  height: 10px;
-  padding: 10px 5px 20px;
-  background-color: #555;
-  margin-top: 0px;
 }
 
 /*estrelas da pagina*/
@@ -303,7 +400,6 @@ button {
 } /*# sourceMappingURL=styles.css.map */
 
 footer {
- 
   margin-bottom: 0;
   height: 80px;
   flex-direction: row;
@@ -346,7 +442,6 @@ footer {
 }
 
 .dropdown-menu {
-  
   position: absolute;
   top: 50px; /* Ajuste conforme necessário */
   background-color: #eb0303;
@@ -357,7 +452,7 @@ footer {
 }
 
 .dropdown-menu ul {
-  list-style-type:none;
+  list-style-type: none;
   padding: 0;
 }
 
@@ -392,9 +487,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     width: 400px;
-    
   }
-  
+
   /* Estilizando a seção */
   .profile-section {
     border: $border;
@@ -411,14 +505,13 @@ footer {
 
   @keyframes spiral {
     0% {
-      background-position: 0 ;
+      background-position: 0;
     }
     100% {
-      background-position: 100% ;
+      background-position: 100%;
     }
   }
 
-  
   .digite {
     display: flex;
     font-size: 30px;
@@ -426,17 +519,16 @@ footer {
     margin-top: 20px;
     white-space: nowrap;
     color: #ffffff;
-  
+
     overflow: hidden;
     width: 14.5ch;
-    
   }
-  
+
   .digite1 {
     display: flex;
     font-size: 25px;
     font-family: $text-primary;
-   margin-bottom: 30px;
+    margin-bottom: 30px;
     white-space: nowrap;
     color: #ffffff;
     border-right: 3px solid #000000;
@@ -444,17 +536,15 @@ footer {
     width: 21.3ch;
     animation: mask1 0.5s linear infinite, write1 15s steps(15, end) infinite;
   }
-  
 
   .info-section {
     display: flex;
-   height: 500px;
-   width: 400px;
-   margin-top: 0px;
+    height: 500px;
+    width: 400px;
+    margin-top: 0px;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     background: linear-gradient(to bottom, #041e6c, #ffffff);
-    
   }
 
   .info-section h2 {
@@ -465,7 +555,7 @@ footer {
     font-size: 35px;
     color: #000000;
   }
-    
+
   .text {
     display: flex;
     flex-direction: column;
@@ -483,9 +573,9 @@ footer {
     margin-top: 80px;
     padding: 5px;
     width: 100%;
-    max-width: 1200px;
+    max-width: 400px;
   }
-  
+
   #title {
     display: flex;
     flex-direction: column;
@@ -501,11 +591,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     width: 400px;
-    
-    
-   
   }
-  
+
   a {
     color: #797979;
     text-decoration: none;
@@ -514,13 +601,12 @@ footer {
     font-size: 20px;
   }
   .animação {
-  position: absolute;
+    position: absolute;
     z-index: 4;
     display: flex;
     margin-top: 50px;
     margin-left: 140px;
     width: 200px;
-   
   }
   footer {
     margin-top: 200px;
@@ -533,7 +619,4 @@ footer {
     font-family: $text-primary;
     margin-left: -45px;
   }
-
- 
-  
 }
