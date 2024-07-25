@@ -140,7 +140,7 @@ function App() {
         </section>
 
         <div className="logoTec">
-          <h4>Abilidades</h4>
+          <h4>Habilidades</h4>
           <Lottie options={defaultOptions3} height={50} width={50} />
           <Lottie options={defaultOptions4} height={50} width={50} />
           <Lottie options={defaultOptions5} height={50} width={50} />
