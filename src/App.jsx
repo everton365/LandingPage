@@ -1,33 +1,35 @@
 import React, { useEffect, useState } from "react";
 import Lottie from "react-lottie";
 import "./index.css";
-import animation from "./components/animações/Animation.json";
-import animation1 from "./components/animações/Animation1.json";
+
+import {
+  getDefaultOptions,
+  getDefaultOptions1,
+  getDefaultOptions3,
+  getDefaultOptions4,
+  getDefaultOptions5,
+  getDefaultOptions6,
+  getDefaultOptions7,
+  getDefaultOptions8,
+  getDefaultOptions9,
+} from "./animaçães.js";
 
 function App() {
+  const defaultOptions = getDefaultOptions();
+  const defaultOptions1 = getDefaultOptions1();
+  const defaultOptions3 = getDefaultOptions3();
+  const defaultOptions4 = getDefaultOptions4();
+  const defaultOptions5 = getDefaultOptions5();
+  const defaultOptions6 = getDefaultOptions6();
+  const defaultOptions7 = getDefaultOptions7();
+  const defaultOptions8 = getDefaultOptions8();
+  const defaultOptions9 = getDefaultOptions9();
+
   const [menuOpen, setMenuOpen] = useState(false);
   console.log(menuOpen);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
-  };
-
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: animation,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
-
-  const defaultOptions1 = {
-    loop: true,
-    autoplay: true,
-    animationData: animation1,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
   };
 
   useEffect(() => {
@@ -110,6 +112,7 @@ function App() {
             <Lottie options={defaultOptions} height={200} width={200} />
           </div>
           <divi className="text">
+            <h4>Sobre</h4>
             <p>
               Eu sou Everton Silva, um profissional da programação com paixão
               por
@@ -135,6 +138,17 @@ function App() {
             <p>Obrigado por visitar minha página de projetos.</p>
           </divi>
         </section>
+
+        <div className="logoTec">
+          <h4>Abilidades</h4>
+          <Lottie options={defaultOptions3} height={50} width={50} />
+          <Lottie options={defaultOptions4} height={50} width={50} />
+          <Lottie options={defaultOptions5} height={50} width={50} />
+          <Lottie options={defaultOptions6} height={50} width={50} />
+          <Lottie options={defaultOptions7} height={50} width={50} />
+          <Lottie options={defaultOptions8} height={50} width={50} />
+          <Lottie options={defaultOptions9} height={50} width={50} />
+        </div>
 
         <h2 id="title">Atividades práticas</h2>
         <section className="praticas">
