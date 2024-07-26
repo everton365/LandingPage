@@ -171,7 +171,7 @@ function App() {
               <p>combinando HTML e CSS, </p>
               <p>focado em criar um layout </p>
               <p>responsivo e conceitos</p>
-              <p>básicos de estilizado para</p>
+              <p>básicos de estilização para</p>
               <p>demonstrar a integração dessas</p>
               <p>tecnologias na construção </p>
               <p>de páginas web.</p>
