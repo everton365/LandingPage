@@ -620,6 +620,12 @@ footer {
     font-family: $text-primary;
     color: #000000;
   }
+  .logoTec {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0px;
+    margin-top: 300px;
+  }
 
   .praticas {
     display: flex;
@@ -636,7 +642,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     font-family: $text-primary;
-    margin-top: 280px;
+    margin-top: 80px;
     margin-left: -50px;
     margin-bottom: -30px;
     color: #797979;

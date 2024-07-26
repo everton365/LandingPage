@@ -138,18 +138,18 @@ function App() {
             <p>Obrigado por visitar minha página de projetos.</p>
           </divi>
         </section>
-
-        <div className="logoTec">
-          <h4>Skills</h4>
-          <Lottie options={defaultOptions3} height={50} width={50} />
-          <Lottie options={defaultOptions4} height={50} width={50} />
-          <Lottie options={defaultOptions5} height={50} width={50} />
-          <Lottie options={defaultOptions6} height={50} width={50} />
-          <Lottie options={defaultOptions7} height={50} width={50} />
-          <Lottie options={defaultOptions8} height={50} width={50} />
-          <Lottie options={defaultOptions9} height={50} width={50} />
-        </div>
-
+        <section className="mobile">
+          <div className="logoTec">
+            <h4>Skills</h4>
+            <Lottie options={defaultOptions3} height={50} width={50} />
+            <Lottie options={defaultOptions4} height={50} width={50} />
+            <Lottie options={defaultOptions5} height={50} width={50} />
+            <Lottie options={defaultOptions6} height={50} width={50} />
+            <Lottie options={defaultOptions7} height={50} width={50} />
+            <Lottie options={defaultOptions8} height={50} width={50} />
+            <Lottie options={defaultOptions9} height={50} width={50} />
+          </div>
+        </section>
         <h2 id="title">Atividades práticas</h2>
         <section className="praticas">
           <div className="link">

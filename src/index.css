@@ -611,6 +611,12 @@ footer {
     font-family: "inter", sans-serif;
     color: #000000;
   }
+  .logoTec {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0px;
+    margin-top: 300px;
+  }
   .praticas {
     display: flex;
     flex-direction: column;
@@ -625,7 +631,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     font-family: "inter", sans-serif;
-    margin-top: 280px;
+    margin-top: 80px;
     margin-left: -50px;
     margin-bottom: -30px;
     color: #797979;
