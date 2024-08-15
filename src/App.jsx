@@ -12,6 +12,7 @@ import {
   getDefaultOptions7,
   getDefaultOptions8,
   getDefaultOptions9,
+  getDefaultOptions10,
 } from "./animaçães.js";
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
   const defaultOptions7 = getDefaultOptions7();
   const defaultOptions8 = getDefaultOptions8();
   const defaultOptions9 = getDefaultOptions9();
-
+  const defaultOptions10 = getDefaultOptions10();
   const [menuOpen, setMenuOpen] = useState(false);
   console.log(menuOpen);
 
@@ -148,6 +149,7 @@ function App() {
             <Lottie options={defaultOptions7} height={50} width={50} />
             <Lottie options={defaultOptions8} height={50} width={50} />
             <Lottie options={defaultOptions9} height={50} width={50} />
+            <Lottie options={defaultOptions10} height={50} width={50} />
           </div>
         </section>
         <h2 id="title">Atividades práticas</h2>

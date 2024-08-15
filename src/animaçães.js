@@ -9,6 +9,7 @@ import animation6 from "./components/animações/Animation6.json";
 import animation7 from "./components/animações/Animation7.json";
 import animation8 from "./components/animações/Animation8.json";
 import animation9 from "./components/animações/Animation9.json";
+import animation10 from "./components/animações/Animation10.json";
 
 export const getDefaultOptions = () => ({
   loop: true,
@@ -95,6 +96,15 @@ export const getDefaultOptions9 = () => ({
   loop: true,
   autoplay: true,
   animationData: animation9,
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid slice",
+  },
+});
+
+export const getDefaultOptions10 = () => ({
+  loop: true,
+  autoplay: true,
+  animationData: animation10,
   rendererSettings: {
     preserveAspectRatio: "xMidYMid slice",
   },

@@ -433,7 +433,6 @@ footer {
 
 /*MENU*/
 .menu-toggle {
-  position: absolute;
   cursor: pointer;
   display: flex;
   flex-direction: column;
