@@ -241,7 +241,9 @@ section figcaption {
 }
 
 .text h4 {
-  font-size: 15px;
+  font-weight: bold;
+  font-family: "inter", sans-serif;
+  font-size: 25px;
 }
 
 .info-section h2 {
@@ -273,12 +275,7 @@ section figcaption {
   font-size: 20px;
   font-weight: bold;
   font-family: "inter", sans-serif;
-  margin-top: -250px;
-  color: #797979;
-}
-
-.textdark {
-  font-size: 25px;
+  margin-top: -280px;
   color: #000000;
 }
 
@@ -290,9 +287,13 @@ section figcaption {
 }
 
 .logoTec h4 {
+  font-size: 25px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #000000;
   position: absolute;
   z-index: 20;
-  margin-top: -20px;
+  margin-top: -40px;
   margin-left: -20px;
   font-family: "inter", sans-serif;
 }

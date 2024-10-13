@@ -17,6 +17,7 @@ import {
   getDefaultOptions10,
 } from "../../animaçães";
 import { Link } from "react-router-dom";
+import Header from "../header/header";
 
 function Home() {
   const defaultOptions = getDefaultOptions();
@@ -65,20 +66,8 @@ function Home() {
 
   return (
     <div className="bg-gray-900 text-white min-h-screen">
+      <Header />
       <header>
-        <div className="title1">
-          <h1>
-            Portifólio.<span>index</span>
-          </h1>
-        </div>
-        <div className="statusbar">
-          <button>Inicio</button>
-          <Link to="/sobreMim">
-            <button>sobre mim</button>
-          </Link>
-          <button>serviços</button>
-          <button>Habilidades</button>
-        </div>
         <section class="profile-section">
           <img src={image1} alt="" />
           <div className="digito">
@@ -201,7 +190,7 @@ function Home() {
             <Lottie options={defaultOptions1} height={200} width={200} />
           </div>
         </section>
-        <section className="text-center mt-8">
+        <section className="text-center  mb-20">
           <h4 className="text-2xl font-bold mb-4">Redes Sociais</h4>
           <div className="flex justify-center space-x-6">
             <a
