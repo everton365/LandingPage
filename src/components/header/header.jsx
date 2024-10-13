@@ -11,11 +11,11 @@ function Header() {
       </div>
 
       <div className="statusbar">
-        <button>Início</button>
+        <Link to="/LandingPage">
+          <button>Início</button>
+        </Link>
         <button>Sobre Mim</button>
         <button>Serviços</button>
-
-        {/* Use o Link corretamente */}
         <Link to="/sobreMim">
           <button>Habilidades</button>
         </Link>
