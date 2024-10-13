@@ -1,10 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 $border: transparent;
 $text-primary: "inter", sans-serif;
 $text-secundary: "Roboto Slab", serif;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
 
 * {
   margin: 0;
@@ -74,7 +72,7 @@ $text-secundary: "Roboto Slab", serif;
 }
 header {
   display: flex;
-  height: 400px;
+  height: 300px;
   width: 100%;
 }
 main {
@@ -87,7 +85,10 @@ main {
 
 /* Estilizando a seção */
 .profile-section {
-  margin-left: 0;
+  margin-left: 90px;
+  position: absolute;
+
+  margin-top: 100px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -207,6 +208,8 @@ main {
 /* Estilizando a imagem */
 .profile-section img {
   margin-left: 80px;
+  width: 200px;
+  right: 100px;
   flex-direction: column;
   border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -225,7 +228,7 @@ section figcaption {
 /* Estilo da seção de informações */
 .info-section {
   display: flex;
-  height: 500px;
+  height: 600px;
   background: linear-gradient(to bottom, #041e6c, #ffffff);
   width: 1220px;
   flex-direction: row;
@@ -256,21 +259,30 @@ section figcaption {
 .praticas {
   display: flex;
   flex-direction: row;
+  background-color: #ffffff;
   justify-content: center;
-  margin-top: 80px;
+  margin-top: 0px;
   margin-bottom: 100px;
-  padding: 10px;
+  padding: 150px;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1220px;
 }
 
 #title {
   display: flex;
+  position: absolute;
   flex-direction: row;
   justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
   font-family: $text-primary;
-  margin-top: 80px;
+  margin-top: -250px;
   color: #797979;
+}
+
+.textdark {
+  font-size: 25px;
+  color: #000000;
 }
 
 .logoTec {
@@ -508,7 +520,7 @@ footer {
     margin-left: -10px;
   }
   .statusbar {
-    margin-top: -250px;
+    margin-top: -80px;
   }
   .statusbar button:nth-child(2)::after {
     display: block;
@@ -518,7 +530,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 400px;
+    width: 300px;
   }
   main {
     display: flex;
@@ -630,9 +642,10 @@ footer {
 
   .praticas {
     display: flex;
+    background-color: #f3f3f3;
     flex-direction: column;
     justify-content: center;
-    margin-top: 0px;
+    margin-top: 100px;
     padding: 5px;
     width: 100%;
     max-width: 400px;

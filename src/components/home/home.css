@@ -1,11 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-$border: transparent;
-$text-primary: "inter", sans-serif;
-$text-secundary: "Roboto Slab", serif;
-
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -22,6 +16,7 @@ $text-secundary: "Roboto Slab", serif;
   width: 100%;
   max-width: 1210px;
 }
+
 .title1 {
   display: flex;
   position: absolute;
@@ -30,8 +25,9 @@ $text-secundary: "Roboto Slab", serif;
   font-family: "Roboto Slab", serif;
   margin-top: 10px;
   margin-left: 80px;
-  border: $border;
+  border: transparent;
 }
+
 .title1 h1 {
   font-size: 20px;
   background-image: linear-gradient(to right, #f3f3f3, #5c78dc);
@@ -39,6 +35,7 @@ $text-secundary: "Roboto Slab", serif;
   background-clip: text;
   color: transparent;
 }
+
 .title1 span {
   color: #000000;
   font-size: 30px;
@@ -47,6 +44,7 @@ $text-secundary: "Roboto Slab", serif;
   background-clip: text;
   color: transparent;
 }
+
 .statusbar {
   width: 100%;
   margin-top: 20px;
@@ -57,6 +55,7 @@ $text-secundary: "Roboto Slab", serif;
   justify-content: flex-end;
   max-width: 1200px;
 }
+
 .statusbar button {
   border: none;
   margin-right: 20px;
@@ -66,17 +65,18 @@ $text-secundary: "Roboto Slab", serif;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  font-family: $text-secundary;
+  font-family: "Roboto Slab", serif;
   font-weight: bold;
-
   background-color: transparent;
   cursor: pointer;
 }
+
 header {
   display: flex;
-  height: 400px;
+  height: 300px;
   width: 100%;
 }
+
 main {
   display: flex;
   width: 100%;
@@ -87,7 +87,9 @@ main {
 
 /* Estilizando a seção */
 .profile-section {
-  margin-left: 0;
+  margin-left: 90px;
+  position: absolute;
+  margin-top: 100px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -112,17 +114,15 @@ main {
   justify-content: flex-start;
   align-items: flex-start;
   margin-left: 30px;
-
   width: 600px;
 }
 
 .digite {
   display: flex;
   font-size: 40px;
-  font-family: $text-primary;
+  font-family: "inter", sans-serif;
   margin-top: 120px;
   white-space: nowrap;
-
   background-image: linear-gradient(to right, #f3f3f3, #5c78dc);
   -webkit-background-clip: text;
   background-clip: text;
@@ -130,16 +130,17 @@ main {
   overflow: hidden;
   width: 14.5ch;
 }
+
 .digite span {
   margin-left: 15px;
-
   background-image: linear-gradient(to right, #f3f3f3, #5c78dc);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
+
 .digito h1 {
-  font-family: $text-secundary;
+  font-family: "Roboto Slab", serif;
 }
 
 @keyframes mask {
@@ -147,7 +148,6 @@ main {
     border-right-color: transparent;
   }
 }
-
 @keyframes write {
   20% {
     width: 0ch;
@@ -158,16 +158,14 @@ main {
   85% {
     width: 14.5ch;
   }
-
   100% {
     width: 14.5ch;
   }
 }
-
 .digite1 {
   display: flex;
   font-size: 40px;
-  font-family: $text-secundary;
+  font-family: "Roboto Slab", serif;
   margin-top: 20px;
   white-space: nowrap;
   color: #ffffff;
@@ -176,8 +174,9 @@ main {
   width: 23.3ch;
   animation: mask1 0.5s linear infinite, write1 15s steps(15, end) infinite;
 }
+
 .profile-section h2 {
-  font-family: $text-secundary;
+  font-family: "Roboto Slab", serif;
 }
 
 @keyframes mask1 {
@@ -185,7 +184,6 @@ main {
     border-right-color: transparent;
   }
 }
-
 @keyframes write1 {
   20% {
     width: 0ch;
@@ -199,7 +197,6 @@ main {
   95% {
     width: 23.5ch;
   }
-
   100% {
     width: 23.5ch;
   }
@@ -207,6 +204,8 @@ main {
 /* Estilizando a imagem */
 .profile-section img {
   margin-left: 80px;
+  width: 200px;
+  right: 100px;
   flex-direction: column;
   border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -225,7 +224,7 @@ section figcaption {
 /* Estilo da seção de informações */
 .info-section {
   display: flex;
-  height: 500px;
+  height: 600px;
   background: linear-gradient(to bottom, #041e6c, #ffffff);
   width: 1220px;
   flex-direction: row;
@@ -237,9 +236,10 @@ section figcaption {
 .text {
   margin-top: 150px;
   margin-left: 30px;
-  font-family: $text-primary;
+  font-family: "inter", sans-serif;
   color: #000000;
 }
+
 .text h4 {
   font-size: 15px;
 }
@@ -247,7 +247,7 @@ section figcaption {
 .info-section h2 {
   margin-top: 150px;
   background-color: transparent;
-  font-family: $text-primary;
+  font-family: "inter", sans-serif;
   color: #000000;
   font-size: 40px;
 }
@@ -256,21 +256,30 @@ section figcaption {
 .praticas {
   display: flex;
   flex-direction: row;
+  background-color: #ffffff;
   justify-content: center;
-  margin-top: 80px;
+  margin-top: 0px;
   margin-bottom: 100px;
-  padding: 10px;
+  padding: 150px;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1220px;
 }
 
 #title {
   display: flex;
+  position: absolute;
   flex-direction: row;
   justify-content: center;
-  font-family: $text-primary;
-  margin-top: 80px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "inter", sans-serif;
+  margin-top: -250px;
   color: #797979;
+}
+
+.textdark {
+  font-size: 25px;
+  color: #000000;
 }
 
 .logoTec {
@@ -279,12 +288,13 @@ section figcaption {
   margin-left: 350px;
   margin-top: -100px;
 }
+
 .logoTec h4 {
   position: absolute;
   z-index: 20;
   margin-top: -20px;
   margin-left: -20px;
-  font-family: $text-primary;
+  font-family: "inter", sans-serif;
 }
 
 .link {
@@ -300,11 +310,12 @@ section figcaption {
   margin-top: 80px;
   cursor: pointer;
 }
+
 .link p {
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-family: $text-primary;
+  font-family: "inter", sans-serif;
   font-size: 15px;
   color: #404040;
 }
@@ -319,6 +330,7 @@ h3 {
   font-size: 20px;
   font-family: "inter", sans-serif;
 }
+
 .text-bnt {
   display: flex;
   flex-direction: column;
@@ -328,11 +340,12 @@ h3 {
   width: 220px;
   height: 200px;
 }
+
 .link button {
   display: flex;
   background-color: #041e6c;
   color: #ffffff;
-  font-family: $text-primary;
+  font-family: "inter", sans-serif;
   border: none;
   border-radius: 10px;
   margin-top: 20px;
@@ -352,6 +365,7 @@ h3 {
   margin-left: 0px;
   width: 200px;
 }
+
 /*estilo footer da pagina*/
 footer {
   display: grid;
@@ -363,7 +377,6 @@ footer {
 }
 
 /*estrelas da pagina*/
-
 .star {
   position: absolute;
   width: 1px;
@@ -374,8 +387,7 @@ footer {
 }
 
 @keyframes twinkle {
-  0%,
-  100% {
+  0%, 100% {
     opacity: 1;
   }
   50% {
@@ -418,8 +430,7 @@ footer {
   /* Posição inicial */
   top: 20%;
   left: 90%;
-} /*# sourceMappingURL=styles.css.map */
-
+} 
 footer {
   margin-bottom: 0;
   height: 80px;
@@ -430,8 +441,9 @@ footer {
 
 .footer p {
   font-size: 20px;
-  font-family: $text-primary;
+  font-family: "inter", sans-serif;
 }
+
 /*MENU*/
 .menu-toggle {
   cursor: pointer;
@@ -487,7 +499,6 @@ footer {
 }
 
 /* Adicione mais estilos específicos para telas menores aqui */
-
 @media only screen and (max-width: 500px) {
   body {
     display: flex;
@@ -496,19 +507,18 @@ footer {
     width: 400px;
     height: 2000;
   }
-
   .title1 {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
-    border: 2px solid #0000;
+    border: 2px solid rgba(0, 0, 0, 0);
     z-index: 20;
     margin-top: -350px;
     margin-left: -10px;
   }
   .statusbar {
-    margin-top: -250px;
+    margin-top: -80px;
   }
   .statusbar button:nth-child(2)::after {
     display: block;
@@ -518,7 +528,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 400px;
+    width: 300px;
   }
   main {
     display: flex;
@@ -527,12 +537,11 @@ footer {
     justify-content: center;
     width: 400px;
   }
-
   /* Estilizando a seção */
   .profile-section {
     display: flex;
     height: 700px;
-    border: $border;
+    border: transparent;
     justify-content: flex-start;
     align-items: flex-start;
     margin-left: 0px;
@@ -543,7 +552,6 @@ footer {
     background-image: url("../public/image/ceu.jpg");
     background-size: cover;
   }
-
   @keyframes spiral {
     0% {
       background-position: 0;
@@ -552,11 +560,10 @@ footer {
       background-position: 100%;
     }
   }
-
   .digite {
     display: flex;
     font-size: 30px;
-    font-family: $text-primary;
+    font-family: "inter", sans-serif;
     margin-top: 20px;
     white-space: nowrap;
     background-image: linear-gradient(to right, #f3f3f3, #5c78dc);
@@ -573,11 +580,10 @@ footer {
     background-clip: text;
     color: transparent;
   }
-
   .digite1 {
     display: flex;
     font-size: 25px;
-    font-family: $text-primary;
+    font-family: "inter", sans-serif;
     margin-bottom: 30px;
     white-space: nowrap;
     color: #ffffff;
@@ -586,7 +592,6 @@ footer {
     width: 21.3ch;
     animation: mask1 0.5s linear infinite, write1 15s steps(15, end) infinite;
   }
-
   .info-section {
     display: flex;
     margin-top: 0px;
@@ -597,20 +602,17 @@ footer {
     justify-content: center;
     background: linear-gradient(to bottom, #041e6c, #ffffff);
   }
-
   .profile-section img {
     margin-top: 200px;
   }
-
   .info-section h2 {
     margin-top: 500px;
     margin-left: 10px;
     background-color: transparent;
-    font-family: $text-primary;
+    font-family: "inter", sans-serif;
     font-size: 35px;
     color: #000000;
   }
-
   .text {
     display: flex;
     flex-direction: column;
@@ -618,7 +620,7 @@ footer {
     margin-top: 20px;
     margin-left: 10px;
     font-size: 11px;
-    font-family: $text-primary;
+    font-family: "inter", sans-serif;
     color: #000000;
   }
   .logoTec {
@@ -627,22 +629,21 @@ footer {
     margin-left: 0px;
     margin-top: 300px;
   }
-
   .praticas {
     display: flex;
+    background-color: #f3f3f3;
     flex-direction: column;
     justify-content: center;
-    margin-top: 0px;
+    margin-top: 100px;
     padding: 5px;
     width: 100%;
     max-width: 400px;
   }
-
   #title {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family: $text-primary;
+    font-family: "inter", sans-serif;
     margin-top: 80px;
     margin-left: -50px;
     margin-bottom: -30px;
@@ -654,7 +655,6 @@ footer {
     justify-content: center;
     width: 400px;
   }
-
   a {
     color: #797979;
     text-decoration: none;
@@ -675,10 +675,9 @@ footer {
     height: 50px;
     flex-direction: row;
   }
-
   .footer p {
     font-size: 16px;
-    font-family: $text-primary;
+    font-family: "inter", sans-serif;
     margin-left: -45px;
   }
-}
+}/*# sourceMappingURL=home.css.map */
